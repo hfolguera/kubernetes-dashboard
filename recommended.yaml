@@ -32,6 +32,8 @@ metadata:
 kind: Service
 apiVersion: v1
 metadata:
+  annotations:
+    metallb.universe.tf/address-pool: dashboard-pool
   labels:
     k8s-app: kubernetes-dashboard
   name: kubernetes-dashboard
@@ -43,7 +45,7 @@ spec:
       nodePort: 30001
   selector:
     k8s-app: kubernetes-dashboard
-  type: NodePort
+  type: LoadBalancer
 
 ---
 
