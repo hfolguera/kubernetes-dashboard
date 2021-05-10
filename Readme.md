@@ -1,4 +1,4 @@
-[**Kubernetes Dashboard**]
+# Kubernetes Dashboard
 
 Repository to store files and configuration needed to deploy the Kubernetes Dashboard with public access and custom Certificates.
 
